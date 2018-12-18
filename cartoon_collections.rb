@@ -8,6 +8,5 @@ def summon_captain_planet(planeteer_calls)
 end
 
 def long_planeteer_calls(planeteer_calls)
-  planeteer_calls.include? (word.length > 4)
-  # Your code here
+    planeteer_calls.any? {|word| word.length > 4}
 end
