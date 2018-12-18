@@ -1,16 +1,13 @@
-def roll_call_dwarves# code an argument here
-  # Your code here
+def roll_call_dwarves(dwarves)
+        dwarves.each_with_index { |dwarf, index|
+    puts (index + 1).to_s + ". " + dwarf }
 end
 
-def summon_captain_planet# code an argument here
-  # Your code here
+def summon_captain_planet(planeteer_calls)
+    planeteer_calls.map { |pc| pc.capitalize + "!" }
 end
 
-def long_planeteer_calls# code an argument here
+def long_planeteer_calls(planeteer_calls)
+  planeteer_calls.include? (word.length > 4)
   # Your code here
-end
-
-def find_the_cheese# code an argument here
-  # the array below is here to help
-  cheese_types = ["cheddar", "gouda", "camembert"]
 end
